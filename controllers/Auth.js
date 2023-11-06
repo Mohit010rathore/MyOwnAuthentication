@@ -95,7 +95,7 @@ exports.login = async (req, res) => {
         httpOnly: true,
       };
 
-      res.cookie("token", token, options).status(200).json({
+      res.cookie("mohitToken", token, options).status(200).json({
         success: true,
         token,
         user,
